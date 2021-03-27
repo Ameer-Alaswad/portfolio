@@ -10,7 +10,7 @@ export default function AboutMe() {
                 </h1>
             </section>
             <section>
-                <div>
+                <div id='about-me-info'>
                     <h2>
                         I am a full stack web developer with a strong passion
                         for coding , I started as a self-taught , and after a
