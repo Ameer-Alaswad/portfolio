@@ -1,18 +1,5 @@
-// import './ProjectsList.css';
-// import ProjectCard from './ProjectsCard';
 import data from './projects.json';
-
-// export default function ProjectList() {
-//     console.log(`data`, data);
-//     return (
-//         <div>
-//             {data.map((info) => {
-//                 return <ProjectCard data={info} key={info._id} />;
-//             })}
-//         </div>
-//     );
-// }
-
+import { Link } from 'react-router-dom';
 import './ProjectsList.css';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -43,55 +30,60 @@ export default function ProjectsList() {
     return (
         <div className='projects-cards-container'>
             {data.map((item) => {
+                let projectName = `/ProjectsList/${item.title}`;
                 return (
-                    <div key={item._id} className='projects-cards'>
-                        <Card className={classes.root}>
-                            <CardActionArea>
-                                <CardMedia
-                                    className={classes.media}
-                                    image='/image.jpeg'
-                                    title='Contemplative Reptile'
-                                    id='card-image'
-                                />
-                                <CardContent id='card-info'>
-                                    <div>
-                                        <Typography
-                                            gutterBottom
-                                            variant='h5'
-                                            component='h2'>
-                                            <p>{item.title}</p>
-                                        </Typography>
-                                        <Typography
-                                            variant='body2'
-                                            color='textSecondary'
-                                            component='p'>
-                                            {item.year}
-                                        </Typography>
-                                        <Typography
-                                            variant='body2'
-                                            color='textSecondary'
-                                            component='p'>
-                                            {item.type}
-                                        </Typography>
-                                    </div>
-                                    <div>
-                                        <div className='technologies'>
-                                            {item.technologies.map((tech) => {
-                                                return (
-                                                    <img
-                                                        alt={tech}
-                                                        id='icons-image'
-                                                        src={tech}
-                                                        key={tech}
-                                                    />
-                                                );
-                                            })}
+                    <Link to={projectName} key={item._id}>
+                        <div className='projects-cards'>
+                            <Card className={classes.root}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image='/image.jpeg'
+                                        title='Contemplative Reptile'
+                                        id='card-image'
+                                    />
+                                    <CardContent id='card-info'>
+                                        <div>
+                                            <Typography
+                                                gutterBottom
+                                                variant='h5'
+                                                component='h2'>
+                                                <p>{item.title}</p>
+                                            </Typography>
+                                            <Typography
+                                                variant='body2'
+                                                color='textSecondary'
+                                                component='p'>
+                                                {item.year}
+                                            </Typography>
+                                            <Typography
+                                                variant='body2'
+                                                color='textSecondary'
+                                                component='p'>
+                                                {item.type}
+                                            </Typography>
                                         </div>
-                                    </div>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </div>
+                                        <div>
+                                            <div className='technologies'>
+                                                {item.technologies.map(
+                                                    (tech) => {
+                                                        return (
+                                                            <img
+                                                                alt={tech}
+                                                                id='icons-image'
+                                                                src={tech}
+                                                                key={tech}
+                                                            />
+                                                        );
+                                                    }
+                                                )}
+                                            </div>
+                                        </div>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </div>
+                    </Link>
                 );
             })}
         </div>
