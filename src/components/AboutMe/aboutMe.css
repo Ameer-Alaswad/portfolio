@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Train+One&display=swap');
+.about-me-container {
+    /* padding-top: 300px; */
+    width: 50%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+    font-size: 30px;
+}
+.about-me-container h1 {
+    font-size: 70px;
+    margin: 40px 0;
+    color: rgba(0, 0, 0, 0.527);
+}
+.about-me-container h2 {
+    font-size: 30px;
+    margin: 40px 0;
+    font-family: 'New Tegomin', serif;
+    letter-spacing: 3px;
+}
+.about-me-container p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: 'New Tegomin', serif;
+}

@@ -1,6 +1,32 @@
 .projects-cards-container {
+    margin-top: 50px;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
+}
+
+#icons-image {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.projects-cards {
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+#card-image {
+    width: 100%;
+}
+
+#card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technologies {
+    margin-top: 55px;
 }
