@@ -1,0 +1,54 @@
+[
+    {
+        "_id": "2",
+        "year": "2020",
+        "title": "Imageboard",
+        "description": "With Imageboard App, you can browse some last recently uploaded images from users and you can add your own images and comments on the image card.",
+        "img": "/projects-images/imageboard.png",
+        "type": "Full Stack Development",
+        "github": "https://github.com/mohamadsoufi/imageboard",
+        "technologies": [
+            "/icons/vue.png",
+            "/icons/javascript.png",
+            "/icons/css3.png",
+            "/icons/nodejs.png",
+            "/icons/postgresql.png"
+        ],
+        "bgColor": "#A2ABAB"
+    },
+    {
+        "_id": "3",
+        "year": "2020",
+        "title": "Petition",
+        "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
+        "img": "/projects-images/petition.png",
+        "type": "Full Stack Development",
+        "github": "https://github.com/mohamadsoufi/Petition",
+        "technologies": [
+            "/icons/handlebar.png",
+            "/icons/javascript.png",
+            "/icons/css3.png",
+            "/icons/nodejs.png",
+            "/icons/postgresql.png"
+        ],
+        "bgColor": "#7D869C"
+    },
+    {
+        "_id": "4",
+        "year": "2020",
+        "title": "Social-Network",
+        "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",
+        "img": "/projects-images/social.png",
+        "type": "Full Stack Development",
+        "github": "https://github.com/mohamadsoufi/social-network",
+        "technologies": [
+            "/icons/react.png",
+            "/icons/javascript.png",
+            "/icons/css3.png",
+            "/icons/nodejs.png",
+            "/icons/socketio.png",
+            "/icons/postgresql.png"
+        ],
+        "bgColor": "#745E59"
+    }
+]
