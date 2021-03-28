@@ -3,12 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Avatar from '@material-ui/core/Avatar';
-// import { Link } from 'react-router-dom';
 import Box from '@material-ui/core/Box';
-import { Link } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -24,10 +22,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-between',
         width: '90vw',
     },
-    // space: {
-    //     marginRight: theme.spacing(2),
-    //     paddingRight: theme.spacing(3),
-    // },
 }));
 
 export default function Navbar() {
@@ -44,19 +38,13 @@ export default function Navbar() {
                         />
                     </IconButton>
                     <Typography>
-                        {/* <Link className={classes.link} href='/'>
-                            <Button color='inherit'>Portfolio</Button>
-                        </Link>
-                        <Link className='links-in-navbar' href='/resume'>
-                            <Button color='inherit'>Resume</Button>
-                        </Link>
-                        <Link className='links-in-navbar' href='/contact'>
-                            <Button color='inherit'>Contact</Button>
-                        </Link> */}
                         <Box component='span' m={2} pt={3}>
                             <Link
-                                // calssName={classes.space}
-                                href='/'
+                                style={{
+                                    color: 'white',
+                                    textDecoration: 'none',
+                                }}
+                                to='/'
                                 color='inherit'>
                                 Home{' '}
                             </Link>
@@ -64,8 +52,11 @@ export default function Navbar() {
 
                         <Box component='span' m={2} pt={3}>
                             <Link
-                                // calssName={classes.space}
-                                href='/contact'
+                                style={{
+                                    color: 'white',
+                                    textDecoration: 'none',
+                                }}
+                                to='/contact'
                                 color='inherit'>
                                 Contact{' '}
                             </Link>
@@ -73,8 +64,11 @@ export default function Navbar() {
 
                         <Box component='span' m={2} pt={3}>
                             <Link
-                                // calssName={classes.space}
-                                href='/resume'
+                                style={{
+                                    color: 'white',
+                                    textDecoration: 'none',
+                                }}
+                                to='/resume'
                                 color='inherit'>
                                 Resume
                             </Link>

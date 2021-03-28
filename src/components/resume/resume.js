@@ -1,22 +1,17 @@
-import './resume.css';
-import { Box } from '@material-ui/core';
+import React from 'react';
+// import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 
-function Resume() {
-    return (
-        <div className='main-container'>
-            <Box
-                className='resume-container'
-                display='flex'
-                flexDirection='column'
-                justifyContent='center'
-                alignItems='center'>
-                <img
-                    src='https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGljfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80'
-                    alt=''
-                />
-            </Box>
-        </div>
-    );
-}
+// Create styles
 
+// Create Document Component
+const Resume = () => (
+    <iframe
+        allowtransparency='true'
+        // style='background-color: #FFFFFF'
+        src='resume.pdf'
+        frameborder='0'
+        height='500'
+        width='100%'
+    />
+);
 export default Resume;
