@@ -37,7 +37,6 @@ export default function Contact() {
                 <textarea required name='message' placeholder='Message' />
                 <input type='submit' value='Send' />
                 {sent && <h1 style={{ color: 'green' }}>sent 👏🏼 </h1>}
-                {/* <h1 style={{ color: 'green' }}>sent</h1> 👏🏼 */}
             </form>
         </div>
     );

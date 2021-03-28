@@ -1,13 +1,36 @@
 import React from 'react';
 import './aboutMe.css';
+import ReactTypingEffect from 'react-typing-effect';
 
 export default function AboutMe() {
     return (
         <div className='about-me-container'>
-            <section>
-                <h1>
-                    Greetings, I am Ameer. :) a Web Developer living in Berlin.
-                </h1>
+            <section style={{ height: '400px', width: '78%' }}>
+                <ReactTypingEffect
+                    text={[
+                        'Greetings, I am Ameer.  a Web Developer living in Berlin. ',
+                    ]}
+                    cursor={' '}
+                    speed={110}
+                    eraseDelay={1000 * 60 * 120}
+                    displayTextRenderer={(text, i) => {
+                        return (
+                            <h1>
+                                {text.split('').map((char, i) => {
+                                    const key = `${i}`;
+                                    return (
+                                        <span
+                                            key={key}
+                                            style={{ color: 'gray' }}>
+                                            {char}
+                                        </span>
+                                    );
+                                })}
+                            </h1>
+                        );
+                    }}
+                />
+                {/* Greetings, I am Ameer. :) a Web Developer living in Berlin. */}
             </section>
             <section>
                 <div id='about-me-info'>
