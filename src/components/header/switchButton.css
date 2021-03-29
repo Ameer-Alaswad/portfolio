@@ -1,0 +1,20 @@
+.image-in-darkmode-button {
+    border: none;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+.darkmode-button {
+    border-radius: 20%;
+    background-color: black;
+}
+.darkmode-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+.darkmode-button-container h3 {
+    margin-top: 7px;
+    margin-right: 10px;
+}

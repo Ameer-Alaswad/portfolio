@@ -6,10 +6,10 @@ import React from 'react';
 // Create Document Component
 const Resume = () => (
     <iframe
-        allowtransparency='true'
+        // allowtransparency='true'
         // style='background-color: #FFFFFF'
         src='resume.pdf'
-        frameborder='0'
+        // frameborder='0'
         height='500'
         width='100%'
     />
