@@ -25,8 +25,8 @@ function App() {
                         component={ProjectPage}
                     />
                 </Switch>
-                <Footer />
             </div>
+            <Footer />
         </BrowserRouter>
     );
 }

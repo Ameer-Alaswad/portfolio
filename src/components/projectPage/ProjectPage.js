@@ -11,7 +11,6 @@ import HomeButton from './homeButton';
 const useStyles = makeStyles({
     root: {
         maxWidth: 1400,
-        // marginLeft: 200,
         margin: '0 auto',
     },
     media: {
@@ -20,18 +19,11 @@ const useStyles = makeStyles({
 });
 export default function ProjectPage() {
     const projectName = useParams().project;
-    const {
-        _id,
-        year,
-        title,
-        description,
-        img,
-        type,
-        github,
-        demo,
-    } = data.find((project) => {
-        return project.title === projectName;
-    });
+    const { _id, year, title, description, img, github, demo } = data.find(
+        (project) => {
+            return project.title === projectName;
+        }
+    );
     const classes = useStyles();
     return (
         <div>
@@ -46,7 +38,7 @@ export default function ProjectPage() {
                             className={classes.media}
                             image={img}
                             title='Contemplative Reptile'
-                            id='card-image'
+                            id={_id}
                         />
                     </a>
                     <CardContent

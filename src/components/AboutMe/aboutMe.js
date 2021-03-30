@@ -30,7 +30,6 @@ export default function AboutMe() {
                         );
                     }}
                 />
-                {/* Greetings, I am Ameer. :) a Web Developer living in Berlin. */}
             </section>
             <section>
                 <div id='about-me-info'>

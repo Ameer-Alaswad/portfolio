@@ -1,4 +1,5 @@
 .footer-container {
+    display: flex;
     background-color: aqua;
     position: fixed;
     bottom: 0;
@@ -6,4 +7,13 @@
     width: 100%;
     z-index: 2;
     background-color: aliceblue;
+    background-color: transparent;
+}
+.footer-container {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.footer-container img:nth-child(1) {
+    margin-right: 12px;
+    width: 30px;
 }
