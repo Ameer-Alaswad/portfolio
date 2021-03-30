@@ -1,36 +1,42 @@
 import './switchButton.css';
-import React, { useEffect, useState } from 'react';
 import SettingsBrightnessIcon from '@material-ui/icons/SettingsBrightness';
 
 export default function SwitchButton() {
-    const [theme, setTheme] = useState(initialMode());
+    let clickedClass = 'clicked';
+    const body = document.body;
+    const lightTheme = 'light';
+    const darkTheme = 'dark';
+    let theme;
 
-    const themeToggler = () => {
-        theme ? setTheme(false) : setTheme(true);
+    if (localStorage) {
+        theme = localStorage.getItem('theme');
+    }
+    if (theme === lightTheme || theme === darkTheme) {
+        body.classList.add(theme);
+    } else {
+        body.classList.add(lightTheme);
+    }
+
+    const switchTheme = (e) => {
+        if (theme === darkTheme) {
+            body.classList.replace(darkTheme, lightTheme);
+            e.target.classList.remove(clickedClass);
+            localStorage.setItem('theme', 'light');
+            theme = lightTheme;
+        } else {
+            body.classList.replace(lightTheme, darkTheme);
+            e.target.classList.remove(clickedClass);
+            localStorage.setItem('theme', 'dark');
+            theme = darkTheme;
+        }
     };
 
-    useEffect(() => {
-        localStorage.setItem('dark', JSON.stringify(theme));
-
-        if (theme) {
-            return (document.documentElement.className = 'dark-mode');
-        } else {
-            return (document.documentElement.className = 'light-mode');
-        }
-    }, [theme]);
-
-    function initialMode() {
-        const storage = localStorage.getItem('dark');
-        const storageParsed = JSON.parse(storage);
-        const darkMode = storageParsed;
-        const valueInStorage = 'dark' in localStorage;
-        if (valueInStorage) {
-            return darkMode;
-        }
-    }
     return (
         <div className='darkmode-button-container'>
-            <button onClick={themeToggler} className='darkmode-button'>
+            <button
+                onClick={(e) => switchTheme(e)}
+                id='darkmode-button'
+                className={theme === 'dark' ? clickedClass : ''}>
                 <SettingsBrightnessIcon
                     fontSize='large'
                     color='primary'

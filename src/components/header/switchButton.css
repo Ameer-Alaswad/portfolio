@@ -5,7 +5,7 @@
     cursor: pointer;
     height: 30px;
 }
-.darkmode-button {
+#darkmode-button {
     height: 30px;
     margin-bottom: 10px;
     border: none;
