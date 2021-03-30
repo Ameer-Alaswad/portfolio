@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Avatar from '@material-ui/core/Avatar';
 import Box from '@material-ui/core/Box';
 import { Link } from 'react-router-dom';
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -20,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     links: {
         flexbox: 'flex',
         justifyContent: 'space-between',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '13px',
+        },
     },
 }));
 
@@ -32,7 +36,12 @@ export default function Navbar() {
                 <Toolbar className={classes.links}>
                     <IconButton>
                         <Avatar
-                            style={{ height: '70px', width: '70px' }}
+                            style={{
+                                height: '70px',
+                                width: '70px',
+                                cursor: 'none',
+                                pointerEvents: 'none',
+                            }}
                             alt='Remy Sharp'
                             src='/ameerp.jpg'
                         />
@@ -40,6 +49,7 @@ export default function Navbar() {
                     <Typography>
                         <Box component='span' m={2} pt={3}>
                             <Link
+                                className={classes.links}
                                 style={{
                                     color: 'white',
                                     textDecoration: 'none',
@@ -52,6 +62,7 @@ export default function Navbar() {
 
                         <Box component='span' m={2} pt={3}>
                             <Link
+                                className={classes.links}
                                 style={{
                                     color: 'white',
                                     textDecoration: 'none',
@@ -64,6 +75,7 @@ export default function Navbar() {
 
                         <Box component='span' m={2} pt={3}>
                             <Link
+                                className={classes.links}
                                 style={{
                                     color: 'white',
                                     textDecoration: 'none',

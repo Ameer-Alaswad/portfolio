@@ -33,7 +33,7 @@ export default function Contact() {
                 <input required type='text' name='user' placeholder='Name' />
                 <input required type='email' name='email' placeholder='Email' />
                 <textarea required name='message' placeholder='Message' />
-                <input type='submit' value='Send' />
+                <input type='submit' value='Send' id='submit-input' />
                 {sent && (
                     <img
                         src='/icons/sent.png'
