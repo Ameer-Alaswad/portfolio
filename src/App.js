@@ -2,7 +2,7 @@ import './App.css';
 import Resume from './components/resume/resume';
 import Navbar from './components/header/navbar';
 import SwitchButton from './components/header/switchButton';
-
+import Footer from './components/footer/footer';
 import Contact from './components/contact/contact';
 import AboutMe from './components/AboutMe/aboutMe';
 import ProjectsList from './components/portfolio/ProjectsList';
@@ -25,6 +25,7 @@ function App() {
                         component={ProjectPage}
                     />
                 </Switch>
+                <Footer />
             </div>
         </BrowserRouter>
     );

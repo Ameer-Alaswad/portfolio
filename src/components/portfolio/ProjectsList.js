@@ -48,7 +48,7 @@ export default function ProjectsList() {
                                     <CardActionArea>
                                         <CardMedia
                                             className={classes.media}
-                                            image='/image.jpeg'
+                                            image={item.img}
                                             title='Contemplative Reptile'
                                             id='card-image'
                                         />

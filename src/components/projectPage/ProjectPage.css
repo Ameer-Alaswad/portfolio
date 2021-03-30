@@ -1,0 +1,20 @@
+.project-page-info {
+    margin: 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-page-info section h3 {
+    margin-top: 25px;
+    width: 70%;
+}
+.demo-github-container {
+    margin-top: 120px;
+}
+
+.demo-github-container h2 {
+    margin-bottom: 15px;
+}
+.title-description-containor {
+    width: 500px;
+}

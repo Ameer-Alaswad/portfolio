@@ -1,0 +1,9 @@
+.footer-container {
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 2;
+    background-color: aliceblue;
+}

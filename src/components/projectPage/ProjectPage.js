@@ -3,20 +3,19 @@ import data from '../portfolio/projects.json';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-// import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import { useParams } from 'react-router-dom';
-
+import './ProjectPage.css';
+import HomeButton from './homeButton';
 const useStyles = makeStyles({
     root: {
-        maxWidth: 1000,
+        maxWidth: 1400,
+        // marginLeft: 200,
+        margin: '0 auto',
     },
     media: {
-        height: 700,
-        maxWidth: 800,
+        height: 720,
     },
 });
 export default function ProjectPage() {
@@ -35,24 +34,43 @@ export default function ProjectPage() {
     });
     const classes = useStyles();
     return (
-        <a
-            style={{
-                textDecoration: 'none',
-            }}
-            href={demo}>
+        <div>
             <Card className={classes.root}>
                 <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image='/image.jpeg'
-                        title='Contemplative Reptile'
-                        id='card-image'
-                    />
+                    <a
+                        style={{
+                            textDecoration: 'none',
+                        }}
+                        href={demo}>
+                        <CardMedia
+                            className={classes.media}
+                            image={img}
+                            title='Contemplative Reptile'
+                            id='card-image'
+                        />
+                    </a>
                     <CardContent
                         style={{ padding: '0' }}
                         id='card-info'></CardContent>
                 </CardActionArea>
             </Card>
-        </a>
+            <div className='project-page-info'>
+                <section className='title-description-containor'>
+                    <h1>
+                        {title} - {year}
+                    </h1>
+                    <h3>{description}</h3>
+                </section>
+                <section className='demo-github-container'>
+                    <h2>
+                        Demo: <a href={demo}>{demo}</a>{' '}
+                    </h2>
+                    <h2>
+                        Github: <a href={github}>{github}</a>
+                    </h2>
+                </section>
+            </div>
+            <HomeButton />
+        </div>
     );
 }
