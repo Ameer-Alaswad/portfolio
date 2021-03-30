@@ -21,7 +21,8 @@ export default function SwitchButton() {
 
     function initialMode() {
         const storage = localStorage.getItem('dark');
-        const darkMode = JSON.parse(storage);
+        const darkMode = storage;
+        // console.log(`storage`, storage);
         const valueInStorage = 'dark' in localStorage;
         if (valueInStorage) {
             return darkMode;
