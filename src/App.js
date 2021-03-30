@@ -17,14 +17,9 @@ function App() {
                 <SwitchButton />
                 <Route exact path='/' component={AboutMe} />
                 <Route exact path='/' component={ProjectsList} />
-                <Switch>
-                    <Route path='/resume' component={Resume} />z
-                    <Route path='/contact' component={Contact} />
-                    <Route
-                        path='/ProjectsList/:project'
-                        component={ProjectPage}
-                    />
-                </Switch>
+                <Route path='/resume' component={Resume} />z
+                <Route path='/contact' component={Contact} />
+                <Route path='/ProjectsList/:project' component={ProjectPage} />
             </div>
             <Footer />
         </BrowserRouter>

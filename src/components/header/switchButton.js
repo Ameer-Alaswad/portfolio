@@ -11,7 +11,6 @@ export default function SwitchButton() {
 
     useEffect(() => {
         localStorage.setItem('dark', JSON.stringify(theme));
-
         if (theme) {
             return (document.documentElement.className = 'dark-mode');
         } else {
