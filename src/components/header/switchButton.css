@@ -1,12 +1,18 @@
 .image-in-darkmode-button {
+    object-fit: fill;
     border: none;
     width: 30px;
     cursor: pointer;
-    border-radius: 20%;
+    height: 30px;
 }
 .darkmode-button {
-    border-radius: 20%;
-    background-color: black;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+    outline: 0 !important;
+    padding: 0;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0);
 }
 .darkmode-button-container {
     display: flex;
@@ -17,4 +23,12 @@
 .darkmode-button-container h3 {
     margin-top: 7px;
     margin-right: 10px;
+}
+.darkmode-button:focus {
+    outline: 0 !important;
+    border: none;
+}
+.darkmode-button:active {
+    outline: 0 !important;
+    border: none;
 }

@@ -1,5 +1,6 @@
 import './switchButton.css';
 import React, { useEffect, useState } from 'react';
+import SettingsBrightnessIcon from '@material-ui/icons/SettingsBrightness';
 
 export default function SwitchButton() {
     const [theme, setTheme] = useState(initialMode());
@@ -9,7 +10,9 @@ export default function SwitchButton() {
     };
 
     useEffect(() => {
-        localStorage.setItem('dark', JSON.stringify(theme));
+        if (theme) {
+            localStorage.setItem('dark', JSON.stringify(theme));
+        }
         if (theme) {
             return (document.documentElement.className = 'dark-mode');
         } else {
@@ -23,24 +26,15 @@ export default function SwitchButton() {
         if (valueInStorage) {
             return darkMode;
         }
-        // else if (!theme) {
-        // localStorage.removeItem('dark');
-        // localStorage.setItem('light', JSON.stringify(theme));
-        // console.log('yesss');
-        // return false;
-        // }
-        // else {
-        //     return true;
-        // }
     }
     return (
         <div className='darkmode-button-container'>
-            <h3>Switch Mode!</h3>
+            {/* <h3>Switch Mode!</h3> */}
             <button onClick={themeToggler} className='darkmode-button'>
-                <img
+                <SettingsBrightnessIcon
+                    fontSize='large'
+                    color='primary'
                     className='image-in-darkmode-button'
-                    src='https://www.kindpng.com/picc/m/274-2741799_plain-half-black-and-white-background-hd-png.png'
-                    alt=''
                 />
             </button>
         </div>

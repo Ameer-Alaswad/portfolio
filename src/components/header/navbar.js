@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
     links: {
         flexbox: 'flex',
         justifyContent: 'space-between',
-        width: '90vw',
     },
 }));
 
@@ -33,8 +32,9 @@ export default function Navbar() {
                 <Toolbar className={classes.links}>
                     <IconButton>
                         <Avatar
+                            style={{ height: '70px', width: '70px' }}
                             alt='Remy Sharp'
-                            src='/static/images/avatar/1.jpg'
+                            src='/ameerp.jpg'
                         />
                     </IconButton>
                     <Typography>

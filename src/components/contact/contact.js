@@ -1,7 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import './contact.css';
-// import { Hidden } from '@material-ui/core';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -17,7 +16,6 @@ export default function Contact() {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
                     if (result.text === 'OK') {
                         setSent(true);
                     }
@@ -36,10 +34,14 @@ export default function Contact() {
                 <input required type='email' name='email' placeholder='Email' />
                 <textarea required name='message' placeholder='Message' />
                 <input type='submit' value='Send' />
-                {sent && <h1 style={{ color: 'green' }}>sent 👏🏼 </h1>}
+                {sent && (
+                    <img
+                        src='/icons/sent.png'
+                        alt=''
+                        style={{ width: '40px', margin: '0 auto' }}
+                    />
+                )}
             </form>
         </div>
     );
 }
-
-// e97578a045c1d9a313661cea6bb54bab

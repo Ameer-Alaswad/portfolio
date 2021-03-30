@@ -21,17 +21,20 @@ const useStyles = makeStyles({
 });
 
 export default function ProjectsList() {
-    // console.log(`props`, props);
     // const { year, title, img, type, technologies, bgColor, _id } = data;
     const classes = useStyles();
-    // console.log('year :', year);
 
     return (
         <div className='projects-cards-container'>
             {data.map((item) => {
                 let projectName = `/ProjectsList/${item.title}`;
                 return (
-                    <Link key={item._id} to={projectName}>
+                    <Link
+                        style={{
+                            textDecoration: 'none',
+                        }}
+                        key={item._id}
+                        to={projectName}>
                         <ScrollAnimation
                             default={false}
                             animateOnce

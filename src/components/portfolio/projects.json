@@ -1,7 +1,7 @@
 [
     {
         "_id": "2",
-        "year": "2020",
+        "year": "2021",
         "title": "Imageboard",
         "description": "With Imageboard App, you can browse some last recently uploaded images from users and you can add your own images and comments on the image card.",
         "img": "/projects-images/imageboard.png",
@@ -20,7 +20,7 @@
     },
     {
         "_id": "3",
-        "year": "2020",
+        "year": "2021",
         "title": "Petition",
         "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
         "img": "/projects-images/petition.png",
@@ -38,7 +38,7 @@
     },
     {
         "_id": "4",
-        "year": "2020",
+        "year": "2021",
         "title": "Social-Network",
         "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",
         "img": "/projects-images/social.png",

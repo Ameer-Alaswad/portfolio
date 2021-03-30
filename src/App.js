@@ -20,7 +20,6 @@ function App() {
                 <Switch>
                     <Route path='/resume' component={Resume} />z
                     <Route path='/contact' component={Contact} />
-                    <Route path='/list' component={ProjectsList} />
                     <Route
                         path='/ProjectsList/:project'
                         component={ProjectPage}

@@ -12,10 +12,10 @@ import { useParams } from 'react-router-dom';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 800,
+        maxWidth: 1000,
     },
     media: {
-        height: 300,
+        height: 700,
         maxWidth: 800,
     },
 });
@@ -35,53 +35,22 @@ export default function ProjectPage() {
     });
     const classes = useStyles();
     return (
-        <a href={demo}>
+        <a
+            style={{
+                textDecoration: 'none',
+            }}
+            href={demo}>
             <Card className={classes.root}>
                 <CardActionArea>
                     <CardMedia
                         className={classes.media}
-                        image={img}
+                        image='/image.jpeg'
                         title='Contemplative Reptile'
                         id='card-image'
                     />
-                    <CardContent id='card-info'>
-                        <div>
-                            <Typography
-                                gutterBottom
-                                variant='h5'
-                                component='h2'>
-                                <p>{title}</p>
-                            </Typography>
-                            <Typography
-                                variant='body2'
-                                color='textSecondary'
-                                component='p'>
-                                {year}
-                            </Typography>
-                            <Typography
-                                variant='body2'
-                                color='textSecondary'
-                                component='p'>
-                                {type}
-                            </Typography>
-                            <Typography
-                                variant='body2'
-                                color='textSecondary'
-                                component='p'>
-                                {description}
-                            </Typography>
-                        </div>
-                        <div>
-                            <div>
-                                {/* <img
-                                            alt={tech}
-                                            id='icons-image'
-                                            src={tech}
-                                            key={tech}
-                                        /> */}
-                            </div>
-                        </div>
-                    </CardContent>
+                    <CardContent
+                        style={{ padding: '0' }}
+                        id='card-info'></CardContent>
                 </CardActionArea>
             </Card>
         </a>

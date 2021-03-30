@@ -3,6 +3,10 @@
 }
 
 body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
     background-color: var(--background-color);
     color: var(--font-color);
     margin: 0;
@@ -19,7 +23,7 @@ code {
 }
 
 .dark-mode {
-    --background-color: #09192f;
+    --background-color: #303030;
     --background-color-secondary: #112240;
     --background-color-side-menu: #162944;
     --background-color-project-card: #162944;
