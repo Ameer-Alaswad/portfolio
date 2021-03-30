@@ -4,10 +4,10 @@
         "year": "2021",
         "title": "Imageboard",
         "description": "With Imageboard App, you can browse some last recently uploaded images from users and you can add your own images and comments on the image card.",
-        "img": "/projects-images/imageboard.png",
+        "img": "/image-board.png",
         "type": "Full Stack Development",
-        "github": "https://petition-pets.herokuapp.com/",
-        "demo":"https://petition-pets.herokuapp.com/",
+        "github": "https://github.com/spicedacademy/fennel-imageboard/",
+        "demo":"https://imageboard.herokuapp.com/",
 
         "technologies": [
             "/icons/vue.png",
@@ -41,9 +41,9 @@
         "year": "2021",
         "title": "Social-Network",
         "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",
-        "img": "/projects-images/social.png",
+        "img": "/social-network.png",
         "type": "Full Stack Development",
-        "github": "https://ameer-social-network.herokuapp.com/",
+        "github": "https://github.com/spicedacademy/fennel-socialnetwork",
         "demo":"https://ameer-social-network.herokuapp.com",
         "technologies": [
             "/icons/react.png",

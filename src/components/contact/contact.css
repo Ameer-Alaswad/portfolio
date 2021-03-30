@@ -43,3 +43,29 @@
     text-transform: uppercase;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 989px) {
+    .contact-form input {
+        width: 300px;
+    }
+    .contact-form textarea {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 739px) {
+    .contact-form input {
+        width: 150px;
+    }
+    .contact-form textarea {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    .contact-form input {
+        width: 100px;
+    }
+    .contact-form textarea {
+        width: 100px;
+    }
+}

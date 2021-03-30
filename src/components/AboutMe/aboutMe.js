@@ -31,7 +31,7 @@ export default function AboutMe() {
                     }}
                 />
             </section>
-            <section>
+            <section className='about-me-info-container'>
                 <div id='about-me-info'>
                     <h2>
                         I am a full stack web developer with a strong passion

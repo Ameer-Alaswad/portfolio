@@ -10,9 +10,8 @@ export default function SwitchButton() {
     };
 
     useEffect(() => {
-        if (theme) {
-            localStorage.setItem('dark', JSON.stringify(theme));
-        }
+        localStorage.setItem('dark', JSON.stringify(theme));
+
         if (theme) {
             return (document.documentElement.className = 'dark-mode');
         } else {
@@ -29,7 +28,6 @@ export default function SwitchButton() {
     }
     return (
         <div className='darkmode-button-container'>
-            {/* <h3>Switch Mode!</h3> */}
             <button onClick={themeToggler} className='darkmode-button'>
                 <SettingsBrightnessIcon
                     fontSize='large'
