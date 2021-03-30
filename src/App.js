@@ -7,7 +7,7 @@ import Contact from './components/contact/contact';
 import AboutMe from './components/AboutMe/aboutMe';
 import ProjectsList from './components/portfolio/ProjectsList';
 import ProjectPage from './components/projectPage/ProjectPage';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
     return (
@@ -17,11 +17,11 @@ function App() {
                 <SwitchButton />
                 <Route exact path='/' component={AboutMe} />
                 <Route exact path='/' component={ProjectsList} />
-                <Route path='/resume' component={Resume} />z
+                <Route path='/resume' component={Resume} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/ProjectsList/:project' component={ProjectPage} />
+                <Footer />
             </div>
-            <Footer />
         </BrowserRouter>
     );
 }
