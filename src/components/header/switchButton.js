@@ -20,7 +20,8 @@ export default function SwitchButton() {
     }, [theme]);
 
     function initialMode() {
-        const darkMode = JSON.parse(localStorage.getItem('dark'));
+        const storage = localStorage.getItem('dark');
+        const darkMode = JSON.parse(storage);
         const valueInStorage = 'dark' in localStorage;
         if (valueInStorage) {
             return darkMode;
@@ -28,7 +29,6 @@ export default function SwitchButton() {
     }
     return (
         <div className='darkmode-button-container'>
-            {/* <h3>Switch Mode!</h3> */}
             <button onClick={themeToggler} className='darkmode-button'>
                 <SettingsBrightnessIcon
                     fontSize='large'
