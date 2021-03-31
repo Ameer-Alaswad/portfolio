@@ -10,18 +10,68 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 800,
+        height: 600,
+        maxWidth: 1200,
+
+        [theme.breakpoints.down('xs')]: {
+            maxWidth: '360px',
+            height: '200px',
+        },
+        [theme.breakpoints.up('xl')]: {
+            maxWidth: '1800px',
+            height: '900px',
+        },
     },
     media: {
-        height: 300,
-        maxWidth: 800,
+        height: 490,
+        maxWidth: 1200,
+        [theme.breakpoints.up('xl')]: {
+            maxWidth: '1800px',
+            height: '730px',
+        },
+        [theme.breakpoints.down('s')]: {
+            maxWidth: '200px',
+            height: '50px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            maxWidth: '360px',
+            height: '145px',
+        },
     },
-});
+    title: {
+        [theme.breakpoints.up('xl')]: {
+            fontSize: '30px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '10px',
+        },
+    },
+    type: {
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '10px',
+            marginTop: '1px',
+        },
+        [theme.breakpoints.up('xl')]: {
+            fontSize: '30px',
+        },
+    },
+    info: {
+        [theme.breakpoints.down('xs')]: {
+            paddingTop: '4px',
+        },
+    },
+    year: {
+        fontSize: '11px',
+        marginTop: '1px',
+        [theme.breakpoints.up('xl')]: {
+            fontSize: '30px',
+        },
+    },
+}));
 
 export default function ProjectsList() {
-    // const { year, title, img, type, technologies, bgColor, _id } = data;
     const classes = useStyles();
 
     return (
@@ -52,42 +102,46 @@ export default function ProjectsList() {
                                             title='Contemplative Reptile'
                                             id='card-image'
                                         />
-                                        <CardContent id='card-info'>
+                                        <CardContent
+                                            className={classes.info}
+                                            id='card-info'>
                                             <div>
                                                 <Typography
+                                                    className={classes.title}
                                                     gutterBottom
                                                     variant='h5'
                                                     component='h2'>
-                                                    <p>{item.title}</p>
+                                                    {item.title}
                                                 </Typography>
                                                 <Typography
+                                                    className={classes.year}
                                                     variant='body2'
                                                     color='textSecondary'
                                                     component='p'>
                                                     {item.year}
                                                 </Typography>
                                                 <Typography
+                                                    className={classes.type}
+                                                    id='type'
                                                     variant='body2'
                                                     color='textSecondary'
                                                     component='p'>
                                                     {item.type}
                                                 </Typography>
                                             </div>
-                                            <div>
-                                                <div className='technologies'>
-                                                    {item.technologies.map(
-                                                        (tech) => {
-                                                            return (
-                                                                <img
-                                                                    alt={tech}
-                                                                    id='icons-image'
-                                                                    src={tech}
-                                                                    key={tech}
-                                                                />
-                                                            );
-                                                        }
-                                                    )}
-                                                </div>
+                                            <div className='technologies'>
+                                                {item.technologies.map(
+                                                    (tech) => {
+                                                        return (
+                                                            <img
+                                                                alt={tech}
+                                                                id='icons-image'
+                                                                src={tech}
+                                                                key={tech}
+                                                            />
+                                                        );
+                                                    }
+                                                )}
                                             </div>
                                         </CardContent>
                                     </CardActionArea>

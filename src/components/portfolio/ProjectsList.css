@@ -1,10 +1,9 @@
 .projects-cards-container {
-    margin-top: 50px;
+    margin-top: 55px;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
 }
 
 #icons-image {
@@ -14,7 +13,7 @@
 }
 
 .projects-cards {
-    width: 800px;
+    width: 1200px;
     margin-bottom: 50px;
 }
 
@@ -29,4 +28,42 @@
 
 .technologies {
     margin-top: 55px;
+}
+@media only screen and (max-width: 832px) {
+    .projects-cards {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .projects-cards {
+        width: 373px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .projects-cards {
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .technologies {
+        margin-top: 27px;
+    }
+    #icons-image {
+        width: 20px;
+        height: 20px;
+    }
+    .projects-cards-container {
+        height: 800px;
+        margin-bottom: 120px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .projects-cards {
+        width: 1800px;
+    }
+    #icons-image {
+        margin-top: 40px;
+        width: 50px;
+        height: 50px;
+    }
 }

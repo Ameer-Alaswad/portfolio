@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HomeButton() {
     const classes = useStyles();
-
     return (
         <Link to='/'>
             <div className={classes.root}>

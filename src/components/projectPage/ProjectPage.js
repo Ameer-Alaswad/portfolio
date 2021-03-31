@@ -7,7 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { useParams } from 'react-router-dom';
 import './ProjectPage.css';
-import HomeButton from './homeButton';
+import Button from '@material-ui/core/Button';
+
 const useStyles = makeStyles({
     root: {
         maxWidth: 1400,
@@ -15,6 +16,9 @@ const useStyles = makeStyles({
     },
     media: {
         height: 720,
+    },
+    button: {
+        width: 76,
     },
 });
 export default function ProjectPage() {
@@ -26,7 +30,7 @@ export default function ProjectPage() {
     );
     const classes = useStyles();
     return (
-        <div>
+        <div style={{ marginTop: '30px' }}>
             <Card className={classes.root}>
                 <CardActionArea>
                     <a
@@ -55,14 +59,26 @@ export default function ProjectPage() {
                 </section>
                 <section className='demo-github-container'>
                     <h2>
-                        Demo: <a href={demo}>{demo}</a>{' '}
+                        <a style={{ textDecoration: 'none' }} href={demo}>
+                            {' '}
+                            <Button variant='contained' color='primary'>
+                                Demo
+                            </Button>
+                        </a>{' '}
                     </h2>
                     <h2>
-                        Github: <a href={github}>{github}</a>
+                        <a style={{ textDecoration: 'none' }} href={github}>
+                            {' '}
+                            <Button
+                                variant='contained'
+                                color='primary'
+                                className={classes.button}>
+                                Github
+                            </Button>
+                        </a>
                     </h2>
                 </section>
             </div>
-            <HomeButton />
         </div>
     );
 }
