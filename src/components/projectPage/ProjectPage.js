@@ -18,11 +18,11 @@ const useStyles = makeStyles((theme) => ({
             height: '630px',
         },
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '600px',
+            maxWidth: '700px',
             height: '500px',
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '350px',
+            maxWidth: '420px',
             height: '300px',
         },
     },
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
             height: '500px',
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '350px',
+            maxWidth: '420px',
             height: '300px',
         },
     },
