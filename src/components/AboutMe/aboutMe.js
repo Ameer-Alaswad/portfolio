@@ -37,11 +37,10 @@ export default function AboutMe() {
                         I am a full stack web developer with a strong passion
                         for coding , I started as a self-taught , and after a
                         couple of online courses and weekend workshops I fully
-                        committed to learning and joined an on-site intensive
-                        bootcamp to get more familiar with the cutting edge
-                        technologies and industry standards. I am eager to be a
-                        part of a motivated team to bring fresh ideas and grow
-                        together.
+                        committed to learning and joined an intensive bootcamp
+                        to get more familiar with the cutting edge technologies
+                        and industry standards. I am eager to be a part of a
+                        motivated team to bring fresh ideas and grow together.
                     </h2>
                     <p>
                         {' '}
