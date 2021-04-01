@@ -9,18 +9,40 @@ import { useParams } from 'react-router-dom';
 import './ProjectPage.css';
 import Button from '@material-ui/core/Button';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 1400,
         margin: '0 auto',
+        [theme.breakpoints.down('md')]: {
+            maxWidth: '900px',
+            height: '630px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            maxWidth: '600px',
+            height: '500px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            maxWidth: '350px',
+            height: '300px',
+        },
     },
     media: {
         height: 720,
+        [theme.breakpoints.down('md')]: {
+            height: '630px',
+        },
+        [theme.breakpoints.down('sm')]: {
+            height: '500px',
+        },
+        [theme.breakpoints.down('xs')]: {
+            maxWidth: '350px',
+            height: '300px',
+        },
     },
     button: {
         width: 76,
     },
-});
+}));
 export default function ProjectPage() {
     const projectName = useParams().project;
     const { _id, year, title, description, img, github, demo } = data.find(

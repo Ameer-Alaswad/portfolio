@@ -5,7 +5,7 @@ import ReactTypingEffect from 'react-typing-effect';
 export default function AboutMe() {
     return (
         <div className='about-me-container'>
-            <section style={{ height: '400px', width: '78%' }}>
+            <section id='greetings-container'>
                 <ReactTypingEffect
                     text={[
                         'Greetings, I am Ameer.  a Web Developer living in Berlin. ',

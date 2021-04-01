@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-between',
         [theme.breakpoints.down('xs')]: {
             fontSize: '13px',
+            // display: 'none',
         },
     },
 }));
@@ -35,16 +36,18 @@ export default function Navbar() {
             <AppBar position='static'>
                 <Toolbar className={classes.links}>
                     <IconButton>
-                        <Avatar
-                            style={{
-                                height: '70px',
-                                width: '70px',
-                                cursor: 'none',
-                                pointerEvents: 'none',
-                            }}
-                            alt='Remy Sharp'
-                            src='/ameerp.jpg'
-                        />
+                        <Link to='/'>
+                            <Avatar
+                                style={{
+                                    height: '70px',
+                                    width: '70px',
+                                    cursor: 'none',
+                                    pointerEvents: 'none',
+                                }}
+                                alt='Remy Sharp'
+                                src='/ameerp.jpg'
+                            />
+                        </Link>
                     </IconButton>
                     <Typography>
                         <Box component='span' m={2} pt={3}>

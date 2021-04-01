@@ -4,7 +4,7 @@ import './contact.css';
 import { useState } from 'react';
 
 export default function Contact() {
-    const [sent, setSent] = useState(true);
+    const [sent, setSent] = useState(false);
     function sendEmail(e) {
         e.preventDefault();
         emailjs

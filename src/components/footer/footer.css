@@ -1,6 +1,6 @@
 .footer-container {
     display: flex;
-    background-color: aqua;
+    justify-content: flex-end;
     position: fixed;
     bottom: 0;
     height: 30px;
@@ -10,7 +10,7 @@
     background-color: transparent;
 }
 .footer-container {
-    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 .footer-container img:nth-child(1) {
