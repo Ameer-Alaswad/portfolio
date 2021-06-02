@@ -6,7 +6,7 @@
         "description": "With Imageboard App, you can browse some last recently uploaded images from users and you can add your own images and comments on the image card.",
         "img": "/image-board.png",
         "type": "Full Stack Development",
-        "github": "https://github.com/spicedacademy/fennel-imageboard/",
+        "github": "https://github.com/Ameer-Alaswad/Image-Board",
         "demo":"https://imageboard.herokuapp.com/",
 
         "technologies": [
@@ -25,7 +25,7 @@
         "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
         "img": "/petition.png",
         "type": "Full Stack Development",
-        "github": "https://github.com/spicedacademy/fennel-petition/tree/Ameer-Alaswad",
+        "github": "https://github.com/Ameer-Alaswad/Petition",
         "demo":"https://petition-pets.herokuapp.com/",
         "technologies": [
             "/icons/handlebar.png",
@@ -43,7 +43,7 @@
         "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",
         "img": "/social-network.png",
         "type": "Full Stack Development",
-        "github": "https://github.com/spicedacademy/fennel-socialnetwork",
+        "github": "https://github.com/Ameer-Alaswad/Social-Network",
         "demo":"https://ameer-social-network.herokuapp.com",
         "technologies": [
             "/icons/react.png",
