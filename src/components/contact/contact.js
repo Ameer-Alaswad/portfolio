@@ -29,6 +29,7 @@ export default function Contact() {
   return (
     <div className="contact-form-container">
       <form className="contact-form" onSubmit={sendEmail}>
+        <h1 className="send-email-title">Send me an email</h1>
         <input type="hidden" name="contact_number" />
         <input required type="text" name="user" placeholder="Name" />
         <input required type="email" name="email" placeholder="Email" />
