@@ -8,7 +8,7 @@ const Resume = () => (
       display: "block",
       margin: "0 auto",
     }}
-    src="AmeerAlaswadCv.pdf"
+    src="AmeerAlaswad-Resume.pdf"
     height="1165"
     width="787"
   />
