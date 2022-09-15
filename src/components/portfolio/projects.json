@@ -1,7 +1,62 @@
 [
-
+    {
+        "_id": "1",
+        "year": "2022",
+        "title": "Weather Forecast",
+        "description": "Forecasting the weather involves recording the ongoing measurements of temperature Depending on where you are in the world.",
+        "img": "/Weather-app.png",
+        "type": "Frontend Development",
+        "github": "https://github.com/Ameer-Alaswad/Weather-app",
+        "demo":"https://weather-forcast-ameer.netlify.app/",
+        "technologies": [
+            "/icons/react.png",
+            "/icons/javascript.png",
+            "icons/file-type-jest.svg",
+            "icons/react-testing-liabrary.png",
+            "icons/material-ui.png"
+            
+            
+        ],
+        "bgColor": "#7D869C"
+    },
+    {
+        "_id": "2",
+        "year": "2022",
+        "title": "Pokedex",
+        "description": "Pokedex is a pokemon app where you can dive into pokemon world, you can find all Pokemon including your favorite one with it's stats, type(S), evolutions etc... ..",
+        "img": "/Pokedex (3).png",
+        "type": "Frontend Development",
+        "github": "https://github.com/Ameer-Alaswad/Pokedex",
+        "demo":"https://pokemon-dexx.netlify.app/",
+        "technologies": [
+            "/icons/react.png",
+            "icons/javascript.png",
+            "icons/material-ui.png",
+            "icons/file-type-jest.svg",
+            "icons/react-testing-liabrary.png",
+            "icons/react-query.svg"
+        ],
+        "bgColor": "#7D869C"
+    },
     {
         "_id": "3",
+        "year": "2022",
+        "title": "TodoList",
+        "description": "list the things that you want to get done or that need to get done.",
+        "img": "/TodoList.png",
+        "type": "Frontend Development - Vanilla JavaScript",
+        "github": "https://github.com/Ameer-Alaswad/Todolist-VJS",
+        "demo":"https://todolist-ameer-vjs.netlify.app",
+        "technologies": [
+            "icons/javascript.png",
+            "icons/css3.png",
+            "icons/html-5-icon.png",
+            "icons/material-ui.png" 
+        ],
+        "bgColor": "#7D869C"
+    },
+    {
+        "_id": "4",
         "year": "2021",
         "title": "Petition",
         "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
@@ -19,7 +74,7 @@
         "bgColor": "#7D869C"
     },
     {
-        "_id": "4",
+        "_id": "5",
         "year": "2021",
         "title": "Social-Network",
         "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",
@@ -36,24 +91,6 @@
             "/icons/postgresql.png"
         ],
         "bgColor": "#745E59"
-    },
-    {
-        "_id": "2",
-        "year": "2021",
-        "title": "Imageboard",
-        "description": "With Imageboard App, you can browse some last recently uploaded images from users and you can add your own images and comments on the image card.",
-        "img": "/image-board.png",
-        "type": "Full Stack Development",
-        "github": "https://github.com/Ameer-Alaswad/Image-Board",
-        "demo":"https://imageboard.herokuapp.com/",
-
-        "technologies": [
-            "/icons/vue.png",
-            "/icons/javascript.png",
-            "/icons/css3.png",
-            "/icons/nodejs.png",
-            "/icons/postgresql.png"
-        ],
-        "bgColor": "#A2ABAB"
     }
+
 ]
