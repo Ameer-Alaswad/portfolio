@@ -18,30 +18,37 @@
 .demo-github-container h2 {
     margin-bottom: 15px;
 }
+
 .title-description-containor {
-    width: 500px;
+    width: 550px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
+
 @media only screen and (max-width: 1280px) {
     .project-page-info {
         width: 900px;
     }
 }
+
 @media only screen and (max-width: 960px) {
     .project-page-info {
         width: 600px;
     }
 }
+
 @media only screen and (max-width: 960px) {
     .project-page-info {
         width: 600px;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .project-page-info {
         width: 350px;
         margin: 0 auto;
     }
+
     .title-description-containor {
         width: 500px;
         margin-top: 50px;
