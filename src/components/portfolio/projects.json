@@ -2,6 +2,22 @@
     {
         "_id": "1",
         "year": "2022",
+        "title": "Interior Designer Website (Freelance)",
+        "description": "Display the work of an interior designer and how to make a contract with him",
+        "img": "/Ghaith-Konbaz-projects.png",
+        "type": "Frontend Development",
+        "github": "https://github.com/Ameer-Alaswad/Interior-Design-Portfolio",
+        "demo":"https://3d-gk.netlify.app/",
+        "technologies": [
+            "/icons/react.png",
+            "/icons/javascript.png",
+            "icons/material-ui.png"
+        ],
+        "bgColor": "#7D869C"
+    },
+    {
+        "_id": "2",
+        "year": "2022",
         "title": "Weather Forecast",
         "description": "Forecasting the weather involves recording the ongoing measurements of temperature Depending on where you are in the world.",
         "img": "/Weather-app.png",
@@ -20,7 +36,7 @@
         "bgColor": "#7D869C"
     },
     {
-        "_id": "2",
+        "_id": "3",
         "year": "2022",
         "title": "Todolist Typescript",
         "description": "A list of things that one wants to get done or that need to get done",
@@ -38,7 +54,7 @@
         "bgColor": "#7D869C"
     },
     {
-        "_id": "3",
+        "_id": "4",
         "year": "2022",
         "title": "Pokedex",
         "description": "Pokedex is a pokemon app where you can dive into pokemon world, you can find all Pokemon including your favorite one with it's stats, type(S), evolutions etc... ..",
@@ -57,7 +73,7 @@
         "bgColor": "#7D869C"
     },
     {
-        "_id": "4",
+        "_id": "5",
         "year": "2022",
         "title": "TodoList",
         "description": "list the things that you want to get done or that need to get done.",
@@ -74,7 +90,7 @@
         "bgColor": "#7D869C"
     },
     {
-        "_id": "5",
+        "_id": "6",
         "year": "2021",
         "title": "Petition",
         "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
@@ -92,7 +108,7 @@
         "bgColor": "#7D869C"
     },
     {
-        "_id": "6",
+        "_id": "7",
         "year": "2021",
         "title": "Social-Network",
         "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",
