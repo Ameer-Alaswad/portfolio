@@ -22,7 +22,6 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text, "error");
-          console.log(error.text, "error");
         }
       );
   }
