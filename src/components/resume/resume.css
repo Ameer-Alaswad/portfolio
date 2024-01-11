@@ -1,0 +1,27 @@
+.responsive-iframe {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+}
+
+@media (max-width: 826px) {
+    .responsive-iframe {
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .responsive-iframe {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 410px) {
+    .responsive-iframe {
+        width: 370px;
+    }
+
+}

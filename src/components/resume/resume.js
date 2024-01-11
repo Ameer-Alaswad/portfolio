@@ -1,16 +1,11 @@
 import React from "react";
-
+import "./resume.css";
 const Resume = () => (
   <iframe
     title="title"
-    style={{
-      border: "none",
-      display: "block",
-      margin: "0 auto",
-    }}
+    className="responsive-iframe"
     src="Ameer-Alaswad-CV.pdf"
     height="1165"
-    width="787"
   />
 );
 export default Resume;

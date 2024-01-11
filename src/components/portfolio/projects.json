@@ -1,6 +1,25 @@
 [
   {
     "_id": "1",
+    "year": "2023 - 2034",
+    "title": "Latakia-GmbH-Services-Freelance",
+    "description": "Frontend Website Latakia GmbH's security, logistics, and cleaning services. Leveraged React.js and TypeScript for seamless user experience and introduced Sentry for effective error tracking, enhancing the overall functionality.",
+    "img": "/Latakia.png",
+    "type": "Frontend Development",
+    "github": "https://github.com/Ameer-Alaswad/latakia-gmbh-services-freelance",
+    "demo": "https://latakia-gmbh.netlify.app/",
+    "technologies": [
+      "/icons/react.png",
+      "icons/material-ui.png",
+      "/icons/Typescript-icon.png",
+      "icons/react-testing-liabrary.png",
+      "icons/file-type-jest.svg",
+      "icons/sentry.png"
+    ],
+    "bgColor": "#7D869C"
+  },
+  {
+    "_id": "2",
     "year": "2023",
     "title": "E-commerce (on going project)",
     "description": "This full-stack e-commerce website features a responsive design, product browsing, cart management, and PayPal integration.",
@@ -20,7 +39,7 @@
     "bgColor": "#7D869C"
   },
   {
-    "_id": "2",
+    "_id": "3",
     "year": "2022",
     "title": "Interior Designer Website (Freelance)",
     "description": "Display the work of an interior designer and how to make a contract with him",
@@ -36,7 +55,7 @@
     "bgColor": "#7D869C"
   },
   {
-    "_id": "3",
+    "_id": "4",
     "year": "2022",
     "title": "Weather Forecast",
     "description": "Forecasting the weather involves recording the ongoing measurements of temperature Depending on where you are in the world.",
@@ -54,7 +73,7 @@
     "bgColor": "#7D869C"
   },
   {
-    "_id": "4",
+    "_id": "5",
     "year": "2022",
     "title": "Todolist Typescript",
     "description": "A list of things that one wants to get done or that need to get done",
@@ -70,7 +89,7 @@
     "bgColor": "#7D869C"
   },
   {
-    "_id": "5",
+    "_id": "6",
     "year": "2022",
     "title": "Pokedex",
     "description": "Pokedex is a pokemon app where you can dive into pokemon world, you can find all Pokemon including your favorite one with it's stats, type(S), evolutions etc... ..",
@@ -89,7 +108,7 @@
     "bgColor": "#7D869C"
   },
   {
-    "_id": "6",
+    "_id": "7",
     "year": "2022",
     "title": "TodoList",
     "description": "list the things that you want to get done or that need to get done.",
@@ -106,7 +125,7 @@
     "bgColor": "#7D869C"
   },
   {
-    "_id": "7",
+    "_id": "8",
     "year": "2021",
     "title": "Petition",
     "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
@@ -124,7 +143,7 @@
     "bgColor": "#7D869C"
   },
   {
-    "_id": "8",
+    "_id": "9",
     "year": "2021",
     "title": "Social-Network",
     "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",

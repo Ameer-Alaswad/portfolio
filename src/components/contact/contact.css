@@ -6,6 +6,7 @@
   border-radius: 5%;
   padding: 20px 20px;
 }
+
 .contact-form-container {
   -webkit-box-shadow: 0px 0px 17px 8px rgba(0, 0, 0, 0.27);
   box-shadow: 0px 0px 17px 8px rgba(0, 0, 0, 0.27);
@@ -27,11 +28,13 @@
   margin: 0 auto;
   margin-bottom: 60px;
 }
+
 .contact-form input:focus {
   border: none;
   border-bottom: 2px solid rgb(29, 161, 242);
   outline: none;
 }
+
 .contact-form textarea {
   margin: 0 auto;
   margin-bottom: 60px;
@@ -39,6 +42,7 @@
   font-size: 20px;
   height: 100px;
 }
+
 .contact-form h1 {
   text-transform: uppercase;
   margin: 0 auto;
@@ -49,14 +53,22 @@
   .contact-form input {
     width: 300px;
   }
+
   .contact-form textarea {
     width: 300px;
   }
 }
+
 @media only screen and (max-width: 739px) {
+  .send-email-title {
+    font-size: larger;
+    text-align: center;
+  }
+
   .contact-form input {
     width: 150px;
   }
+
   .contact-form textarea {
     width: 150px;
   }
@@ -67,71 +79,93 @@
     margin-bottom: 30px;
     width: 150px;
   }
+
+  .send-email-title {
+    font-size: medium;
+    text-align: center;
+  }
+
   .contact-form input::placeholder {
     font-size: 12px;
   }
+
   .contact-form textarea {
     width: 148px;
     height: 50px;
     margin: 0 auto;
   }
+
   .contact-form {
     margin-top: 50px;
     width: 150px;
     height: 300px;
   }
+
   .contact-form-container {
     height: 60vh;
     width: 70%;
   }
+
   .contact-form textarea::placeholder {
     font-size: 12px;
   }
+
   .contact-form img {
     margin-left: 20px;
   }
+
   #submit-input {
     margin-top: 10px;
     font-size: 15px;
     margin-left: 2px;
   }
 }
+
 @media only screen and (max-height: 1200px) {
   .contact-form-container {
     height: 65vh;
   }
 }
+
 @media only screen and (max-height: 900px) {
   .contact-form-container {
     height: 55vh;
   }
+
   .contact-form input {
     margin-bottom: 25px;
   }
+
   .contact-form textarea {
     height: 50px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
+
   .contact-form {
     height: 450px;
     padding-top: 120px;
   }
 }
+
 @media only screen and (max-height: 600px) {
   .contact-form-container {
     height: 45vh;
   }
+
   .contact-form {
     height: 250px;
   }
+
   #submit-input {
     font-size: 15px;
   }
+
   .contact-form textarea {
     margin-bottom: 25px;
     height: 30px;
   }
+
   .contact-form input {
     height: 30px;
   }
