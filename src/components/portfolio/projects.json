@@ -141,42 +141,5 @@
       "icons/material-ui.png"
     ],
     "bgColor": "#7D869C"
-  },
-  {
-    "_id": "9",
-    "year": "2021",
-    "title": "Petition",
-    "description": "Online Indoor petition where users can login and sign the petition and see who also signed it already.",
-    "img": "/petition.png",
-    "type": "Full Stack Development",
-    "github": "https://github.com/Ameer-Alaswad/Petition",
-    "demo": "https://petition-pets.herokuapp.com/",
-    "technologies": [
-      "/icons/handlebar.png",
-      "/icons/javascript.png",
-      "/icons/css3.png",
-      "/icons/nodejs.png",
-      "/icons/postgresql.png"
-    ],
-    "bgColor": "#7D869C"
-  },
-  {
-    "_id": "10",
-    "year": "2021",
-    "title": "Social-Network",
-    "description": "Social network App, where users can make an account, have their own profile with the bio and personal image, and find other people to add and chat in a public chatroom.",
-    "img": "/social-network.png",
-    "type": "Full Stack Development",
-    "github": "https://github.com/Ameer-Alaswad/Social-Network",
-    "demo": "https://ameer-social-network.herokuapp.com",
-    "technologies": [
-      "/icons/react.png",
-      "/icons/javascript.png",
-      "/icons/css3.png",
-      "/icons/nodejs.png",
-      "/icons/socketio.png",
-      "/icons/postgresql.png"
-    ],
-    "bgColor": "#745E59"
   }
 ]
